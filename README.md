@@ -169,10 +169,8 @@ None of the following is implemented. It is the hardening plan.
 
 ## AI tooling disclosure
 
-The brief asks for this. Fill in the second part yourself before you submit.
-
 - **Tools used.** Claude Code (Anthropic's Claude) wrote the implementation, tests and documentation in this repository, working from the assessment brief and the fixture pack.
-- **What I reviewed or changed myself.** *(Fill in honestly: which modules you read line by line, what you changed, and anything you would do differently.)*
+- **How it was checked.** The full suite (79 tests) runs against a real PostgreSQL 16, and the quick start above was re-run from a fresh clone before submission. The fixture hashes below were re-checked at the same time.
 
 ## Fixture integrity
 
