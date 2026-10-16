@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==8.3.4
+# Embedded PostgreSQL 16 binaries so tests run against real Postgres without Docker.
+pgserver==0.1.4

@@ -1,0 +1,14 @@
+# Optional: PostgreSQL in Docker instead of the embedded server from scripts/dev_db.py.
+services:
+  db:
+    image: postgres:16.4
+    environment:
+      POSTGRES_USER: opsib
+      POSTGRES_PASSWORD: opsib
+      POSTGRES_DB: opsib
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U opsib"]
+      interval: 2s
+      retries: 20
